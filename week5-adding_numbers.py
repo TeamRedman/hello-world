@@ -1,6 +1,6 @@
 import sys
 
-def add_them_all(info450_fall_2020):
+def add_them_all(filename):
     sum = 0
     ### Your code here
     with open ('info450_fall_2020/week5/homework/a.txt' , 'r') as f:
@@ -11,6 +11,6 @@ def add_them_all(info450_fall_2020):
     return sum
 
 if __name__ == "__main__":
-    fname = sys.argv[1:119]
+    fname = sys.argv[0]
     print(f"Processing {fname}")
     print(add_them_all(fname))
